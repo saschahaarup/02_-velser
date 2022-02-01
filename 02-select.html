@@ -29,7 +29,7 @@
           </p>
         </article>
         <article>
-          <img src="img.1.2.png" alt="natur1" />
+          <img src="img.1.2.png" alt="natur2" />
           <h3>Article 2</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Et laborum
@@ -46,18 +46,26 @@
     </main>
     <footer>This is the footer</footer>
     <script>
+      const header = document.querySelector("header");
+      console.log(header);
+
       const overskrift = document.querySelector("h1");
       console.log(overskrift);
+
       const underoverskrift = document.querySelector("h2");
       console.log(underoverskrift);
-      const article = document.querySelector("article:first-child");
-      console.log(article);
-      const firstchild = document.querySelector("article:nth-child(2)");
-      console.log(firstchild);
-      const pic = document.querySelector("img");
-      console.log(pic);
-      const picture = document.querySelector("img");
-      console.log(picture);
+
+      const firstarticle = document.querySelector("article:first-child");
+      console.log(firstarticle);
+
+      const secondarticle = document.querySelector("article:nth-child(2)");
+      console.log(secondarticle);
+
+      const pic1 = document.querySelector("img");
+      console.log(pic1);
+
+      const pic2 = document.querySelector("article:nth-child(2) img");
+      console.log(pic2);
     </script>
   </body>
 </html>
