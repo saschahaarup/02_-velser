@@ -31,3 +31,8 @@ footer {
   border: 1px black solid;
   padding: 20px;
 }
+
+/* opgave 07 */
+.skygge {
+  box-shadow: 8px 7px 9px 1px rgba(0, 0, 0, 0.75);
+}
