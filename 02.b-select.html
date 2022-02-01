@@ -48,17 +48,26 @@
     <script>
       const menu = document.querySelector("header");
       console.log(menu);
+
       const overskrift = document.querySelector("h1");
       overskrift.textContent = "Billeder";
       console.log(overskrift);
+
       const underoverskrift = document.querySelector("h2");
+      underoverskrift.textContent = "Naturen";
       console.log(underoverskrift);
-      const article = document.querySelector("article:first-child");
+
+      const article = document.querySelector("article:first-child h3");
+      article.textContent = "Ørken";
       console.log(article);
-      const firstchild = document.querySelector("article:nth-child(2)");
+
+      const firstchild = document.querySelector("article:nth-child(2) h3");
+      firstchild.textContent = "Bro";
       console.log(firstchild);
+
       const pic = document.querySelector("img");
       console.log(pic);
+
       const picture = document.querySelector("img");
       console.log(picture);
     </script>
