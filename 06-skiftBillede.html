@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Titel</h1>
+    </header>
+    <main>
+      <h2>Undertitel</h2>
+      <section>
+        <article>
+          <img src="img1.1.png" alt="natur1" />
+          <h3>Article 1</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et laborum
+            cumque placeat, iusto architecto repellendus accusantium eos
+            blanditiis, aliquam repellat eligendi maiores ad asperiores debitis
+            dolor cupiditate, laboriosam eum ipsam.Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Et laborum cumque placeat, iusto
+            architecto repellendus accusantium eos blanditiis, aliquam repellat
+            eligendi maiores ad asperiores debitis dolor cupiditate, laboriosam
+            eum ipsam.
+          </p>
+        </article>
+        <article>
+          <img src="img.1.2.png" alt="natur1" />
+          <h3>Article 2</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et laborum
+            cumque placeat, iusto architecto repellendus accusantium eos
+            blanditiis, aliquam repellat eligendi maiores ad asperiores debitis
+            dolor cupiditate, laboriosam eum ipsam.Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Et laborum cumque placeat, iusto
+            architecto repellendus accusantium eos blanditiis, aliquam repellat
+            eligendi maiores ad asperiores debitis dolor cupiditate, laboriosam
+            eum ipsam.
+          </p>
+        </article>
+      </section>
+    </main>
+    <footer>This is the footer</footer>
+    <script>
+      // const menu = document.querySelector("header");
+      // console.log(menu);
+
+      // const overskrift = document.querySelector("h1");
+      // overskrift.textContent = "Billeder";
+      // console.log(overskrift);
+
+      // const underoverskrift = document.querySelector("h2");
+      // underoverskrift.textContent = "Naturen";
+      // console.log(underoverskrift);
+
+      // const article = document.querySelector("article:first-child h3");
+      // article.textContent = "Ørken";
+      // console.log(article);
+
+      // const firstchild = document.querySelector("article:nth-child(2) h3");
+      // firstchild.textContent = "Bro";
+      // console.log(firstchild);
+
+      // const pic = document.querySelector("img");
+      // console.log(pic);
+
+      // const picture = document.querySelector("img");
+      // console.log(picture);
+
+      document.addEventListener("DOMContentLoaded", start);
+      function start() {
+        console.log("DOM er loaded");
+
+        const pic1 = document.querySelector("article:nth-child(1) img");
+        console.log(pic1);
+        pic1.src = "img.1.2.png";
+        pic1.alt = "En bro";
+
+        let mainSection = document.querySelector("section");
+        // nyt article element
+        let newArticle = document.createElement("article");
+        // nyt H# element
+        let overskrift = document.createElement("h3");
+        // tekst til overskriften
+        let overskriftText = document.createTextNode("Article 3");
+        // indsæt tekst i overskrift
+        overskrift.appendChild(overskriftText);
+        // tilføj overskrift tekst
+        newArticle.appendChild(overskrift);
+        // tilføj article til section
+        mainSection.appendChild(newArticle);
+      }
+      const pic1 = document.querySelector("article:nth-child(1) img");
+      pic1.addEventListener("click", skiftbillede);
+      function skiftbillede() {
+        console.log("billede skifter");
+        pic1.src =
+          "https://placeimg.com/400/300/arch?t=" +
+          Math.floor(Math.random() * 10);
+      }
+    </script>
+  </body>
+</html>
