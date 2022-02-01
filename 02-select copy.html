@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Titel</h1>
+    </header>
+    <main>
+      <h2>Undertitel</h2>
+      <section>
+        <article>
+          <img src="img1.1.png" alt="natur1" />
+          <h3>Article 1</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et laborum
+            cumque placeat, iusto architecto repellendus accusantium eos
+            blanditiis, aliquam repellat eligendi maiores ad asperiores debitis
+            dolor cupiditate, laboriosam eum ipsam.Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Et laborum cumque placeat, iusto
+            architecto repellendus accusantium eos blanditiis, aliquam repellat
+            eligendi maiores ad asperiores debitis dolor cupiditate, laboriosam
+            eum ipsam.
+          </p>
+        </article>
+        <article>
+          <img src="img.1.2.png" alt="natur1" />
+          <h3>Article 2</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et laborum
+            cumque placeat, iusto architecto repellendus accusantium eos
+            blanditiis, aliquam repellat eligendi maiores ad asperiores debitis
+            dolor cupiditate, laboriosam eum ipsam.Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Et laborum cumque placeat, iusto
+            architecto repellendus accusantium eos blanditiis, aliquam repellat
+            eligendi maiores ad asperiores debitis dolor cupiditate, laboriosam
+            eum ipsam.
+          </p>
+        </article>
+      </section>
+    </main>
+    <footer>This is the footer</footer>
+    <script>
+      const overskrift = document.querySelector("h1");
+      console.log(overskrift);
+      const underoverskrift = document.querySelector("h2");
+      console.log(underoverskrift);
+      const article = document.querySelector("article:first-child");
+      console.log(article);
+      const firstchild = document.querySelector("article:nth-child(2)");
+      console.log(firstchild);
+      const pic = document.querySelector("img");
+      console.log(pic);
+      const picture = document.querySelector("img");
+      console.log(picture);
+    </script>
+  </body>
+</html>
